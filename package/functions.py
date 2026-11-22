@@ -20,7 +20,7 @@ def students(text: str) -> list[tuple[str, str]]:
     return [(student_id, dept.strip()) for student_id, dept in matches]
 
 
-def github_and_coupons(text: str) -> tuple[list[str], list[str]]:
+def github_coupons(text: str) -> tuple[list[str], list[str]]:
     """4. GitHub 저장소 URL(gitlab 제외) 및 2026년 유효 쿠폰 코드 추출"""
     github_pattern = r"https?://github\.com/[^\s]+"
     coupon_pattern = r"\bFEST-2026-[A-Z0-9]{4}\b"

@@ -4,7 +4,7 @@ from package import (
     valid_emails,
     phone_numbers,
     students,
-    github_and_coupons,
+    github_coupons,
     sales_summary,
 )
 
@@ -16,7 +16,7 @@ def main() -> None:
     emails = valid_emails(log_text)
     phones = phone_numbers(log_text)
     students_list = students(log_text)
-    github_urls, coupons = github_and_coupons(log_text)
+    github_urls, coupons = github_coupons(log_text)
     sales_list, total_sales = sales_summary(log_text)
 
     print("=== [1] 유효한 이메일 목록 ===")

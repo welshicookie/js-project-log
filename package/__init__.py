@@ -3,7 +3,7 @@ from .functions import (
     valid_emails,
     phone_numbers,
     students,
-    github_and_coupons,
+    github_coupons,
     sales_summary,
 )
 
@@ -12,6 +12,6 @@ __all__ = [
     "valid_emails",
     "phone_numbers",
     "students",
-    "github_and_coupons",
+    "github_coupons",
     "sales_summary",
 ]
